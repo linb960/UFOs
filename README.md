@@ -31,7 +31,7 @@ The project uses 4 files and an image.
    - Display the full listing of the data file
    - If a change is detected to a filter, update the display to show only data matching the criteria.
    - A __filters__ object holds the key of which filter was changed, ie date, city, state, country or shape.   The value is the user input.
-   - The updated __filters__ object key and value is then used in to rewrite the table data.  The code to do that is here:
+   - The updated __filters__ object key and value is then used to rewrite the table data.  The code to do that is here:
 ```
   function filterTable() {
     let filteredData = tableData;
@@ -53,15 +53,25 @@ If the user enters for example a date, the table changes to show only the items 
 
 <img src="screenshots/UFO_date.png">
 
-Summary:
+Another example here shows how if the state and the shape are added to the form:
 
-The summary addresses one drawback of this webpage (2 pt)
+<img src="screenshots/UFO_state_shape.png">
 
-The search options are case sensitive.  Entering CA for California yields empty results.  Whereas ca shows all sightings in California.
-There should be more information about the dates available for searching
+What you don't see is that if first the state changes the table changes to reflect the listing to show only those sightings for that state.  The shape filters the table down again to provide the output seen above.
 
-The summary addresses two additional recommendations for further development (4 pt)
-Sort by functions could be added to allow users to see columns sorted by date, city, state, country or shape
-Add case sensitive tests so for example if users would enter CA for California it will pull up data with ca for California
 
- <img src="screenshots/UFO_screenshot.jpg" width="668" height="333">
+## Summary:
+There are a few drawbacks to the this analysis that would take addition work and further development to implement.
+
+### Drawbacks:
+One of the primary drawbacks is that the search criteria is case sensitive.  Entering CA for California yields empty results.  Whereas ca shows all sightings in California.
+
+Another is the inability to sort the data.  If for example I wanted to find all the sightings for a triangle shape I get the results in an ascending order but cannot change it to a descending order.
+
+Also the text above the table does not provide information on the dates of the information.  It would be a simple matter to add a line that states that this date is from January 1, 2010 to January 13, 2010.  That way the user doesn't input a date beyond the data set.
+
+### Recommendations
+The reccomendations would follow from the drawbacks:
+1. Add in the app.js file a .toLowerCase() method for the value from the form input.  This will allow the user to enter their criteria with upper or lower case.
+2. Add sorting functions to the table so that data can be sorted ascending or descending. 
+3. Add more information in the paragraph above the table to explain to the user the time frame of the data.
