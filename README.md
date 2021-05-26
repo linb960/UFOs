@@ -74,4 +74,3 @@ Also the text above the table does not provide information on the dates of the i
 The reccomendations would follow from the drawbacks:
 1. Add in the app.js file a .toLowerCase() method for the value from the form input.  This will allow the user to enter their criteria with upper or lower case.
 2. Add sorting functions to the table so that data can be sorted ascending or descending. 
-3. Add more information in the paragraph above the table to explain to the user the time frame of the data.
