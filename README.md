@@ -45,7 +45,13 @@ The project uses 4 files and an image.
 ```
 
 ## Results:
-When a user enters information into any of the filter fields and then moves the cursor to another field the table is updated.
+When a user enters information into any of the filter fields and then moves the cursor to another field the table is updated. Here is what the initial index.html page looks like to the user.  Notice the text in the filter boxes.  This is text that has been added in the html file as placeholder text to give the user a sense of what is expected.
+
+ <img src="screenshots/UFO_screenshot.jpg">
+ 
+If the user enters for example a date, the table changes to show only the items with the date entered. Like this:
+
+<img src="screenshots/UFO_date.jpg">
 
 Summary:
 
@@ -57,3 +63,5 @@ There should be more information about the dates available for searching
 The summary addresses two additional recommendations for further development (4 pt)
 Sort by functions could be added to allow users to see columns sorted by date, city, state, country or shape
 Add case sensitive tests so for example if users would enter CA for California it will pull up data with ca for California
+
+ <img src="screenshots/UFO_screenshot.jpg" width="668" height="333">
