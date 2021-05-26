@@ -51,7 +51,7 @@ When a user enters information into any of the filter fields and then moves the 
  
 If the user enters for example a date, the table changes to show only the items with the date entered. Like this:
 
-<img src="screenshots/UFO_date.jpg">
+<img src="screenshots/UFO_date.png">
 
 Summary:
 
