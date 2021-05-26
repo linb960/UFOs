@@ -45,7 +45,7 @@ The project uses 4 files and an image.
 ```
 
 ## Results:
-
+When a user enters information into any of the filter fields and then moves the cursor to another field the table is updated.
 
 Summary:
 
